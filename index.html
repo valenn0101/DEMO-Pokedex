@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grid-container">
+    <header class="header">
+      <h1>Pokédex Navigator</h1>
+    </header>
+    <nav class="navbar">
+      <div class="navbar2">
+        <div class="titulo-nav">
+          <h3>Welcome to the <b class="numero-de-generacion"> </b></h3>
+        </div>
+        <div>
+          <button class="btn btn-outline-success mr-2" id="pagina-anterior">
+            Previous Generation
+          </button>
+          <button class="btn btn-outline-success" id="pagina-siguiente">
+            Next Generation
+          </button>
+        </div>
+      </div>
+    </nav>
+    <aside class="sidebar">
+      <ul class="sidebar-lista">
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar" id="ver-todos">All</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar normal" id="normal">Normal</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar fire" id="fire">Fire</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar water" id="water">Water</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar grass" id="grass">Grass</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar electric" id="electric">
+            Electric
+          </button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar ice" id="ice">Ice</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar fighting" id="fighting">
+            Fighting
+          </button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar poison" id="poison">Poison</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar ground" id="ground">Ground</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar flying" id="flying">Flying</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar psychic" id="psychic">Psychic</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar bug" id="bug">Bug</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar rock" id="rock">Rock</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar ghost" id="ghost">Ghost</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar dark" id="dark">Dark</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar dragon" id="dragon">Dragon</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar steel" id="steel">Steel</button>
+        </li>
+        <li class="sidebar-item">
+          <button class="btn btn-sidebar fairy" id="fairy">Fairy</button>
+        </li>
+      </ul>
+    </aside>
+    <article class="main">
+      <div class="cartas-de-pokemones"></div>
+    </article>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+    <footer class="footer">Copyright © Valentin Veron Caceres</footer>
+    <script type="text/javascript" src="src/js/data.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
+  </body>
+</html>
